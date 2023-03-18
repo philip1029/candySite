@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        즐거운 화이트데이
+    </title>
+    <link rel="icon" href="photo/candy.jpeg">
+    <style>
+        body {
+            background-image: url(photo/candy.jpeg);
+            background-size: 10%;
+            background-attachment:local;
+        }
+        .hidden {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" style="display: none;">
+    <b>
+    <h1 style="font-size: 1000%">
+        여러분 이 사탕들 보고 이빨 썩지 않게 대리만족 하세요~~
+        </h1>
+    <h1 style="font-size: 5000%">
+        <i>
+            우와~~ 사이트 이다~~
+            사탕이 엄청 많다!!
+            대리만족 잘 하길 바래요~ <br><br>
+            적을게 없네요~
+            사탕 더 많이 드시게, 
+            칸이나 채우고 있답니다~
+            이 사이트는, 
+            3월 14일에만 
+            오픈 되는 레전드 사이트입니다~
+            당신은 행운아인!
+        </i>
+    </h1>
+    </b>
+    </div>
+
+    <script>
+        // 현재 날짜와 시간을 가져옵니다.
+        var today = new Date();
+  
+        // 3월 14일인지 확인합니다.
+        if(today.getMonth() == 2 && today.getDate() == 14) {
+          // content div를 보여줍니다.
+          document.getElementById("content").style.display = "block";
+          document.querySelector(".hidden").style.display = "block";
+        } else {
+        // 배경 이미지를 없앱니다.
+        document.body.style.backgroundImage = "none";
+        document.body.innerHTML = "<h1>3월 14일에만 열리는 사이트입니다.</h1> <p> 사탕은 다음 기회에.. ^^ </p>";
+      }
+    </script>
+</body>
